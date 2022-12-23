@@ -1,0 +1,85 @@
+body {
+  background: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+nav .button {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding-top: 0.5rem;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  width: 5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+nav .active {
+  font-weight: bold;
+  background: #393b44;
+  box-shadow: 4px -4px 3px silver;
+}
+
+.hidden {
+  display: none;
+}
+
+#view-brand, #view-regular, #view-solid {
+  position: absolute;
+  transition: all ease 0.5s;
+  transform: none;
+  background: #393b44;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  padding-top: 1rem;
+  height: 92vh;
+  overflow: scroll;
+}
+#view-brand.hidden, #view-regular.hidden, #view-solid.hidden {
+  width: 0;
+  height: 0;
+  transform: scale(0);
+}
+#view-brand::-webkit-scrollbar, #view-regular::-webkit-scrollbar, #view-solid::-webkit-scrollbar {
+  height: 0;
+  width: 10px;
+  border-radius: 10px;
+  background: #000;
+}
+#view-brand::-webkit-scrollbar-thumb, #view-regular::-webkit-scrollbar-thumb, #view-solid::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+#view-brand .icon-content, #view-regular .icon-content, #view-solid .icon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#view-brand .icon-content .icon, #view-regular .icon-content .icon, #view-solid .icon-content .icon {
+  border-radius: 10px;
+  background: silver;
+  padding: 0.5rem;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+#view-brand .icon-content .icon img, #view-regular .icon-content .icon img, #view-solid .icon-content .icon img {
+  width: 50px;
+  height: 50px;
+}
+#view-brand .icon-content p, #view-regular .icon-content p, #view-solid .icon-content p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
