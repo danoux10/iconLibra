@@ -30,5 +30,6 @@
 </div>
 
 <script src="script.js"></script>
+<script src="copySvg.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 			$view = "
 				<span class='icon-content'>
 					<span class='icon'>
-						<img src= '$file'  alt='$file_name'>
+						<img src= '$file'  alt='$file_name' onclick='copySVG(this)'>
 					</span>
 					<p>$file_name</p>
 				</span>
@@ -28,7 +28,7 @@
 			$view = "
 				<span class='icon-content'>
 					<span class='icon'>
-						<img src= '$file'  alt='$file_name'>
+						<img src= '$file'  alt='$file_name' onclick='copySVG(this)'>
 					</span>
 					<p>$file_name</p>
 				</span>
@@ -47,7 +47,7 @@
 			$view = "
 				<span class='icon-content'>
 					<span class='icon'>
-						<img src= '$file'  alt='$file_name'>
+						<img src= '$file'  alt='$file_name' onclick='copySVG(this)'>
 					</span>
 					<p>$file_name</p>
 				</span>
