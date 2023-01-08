@@ -8,13 +8,15 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<?php include 'function.php'; ?>
+<?php require 'function.php'; ?>
 <body>
 
 <nav>
 	<div class="button" id="brand">brand</div>
 	<div class="button" id="regular">regular</div>
 	<div class="button" id="solid">solid</div>
+	<div class="button" id="bootstrap">bootstrap</div>
+	
 </nav>
 
 <div id="view-brand">
@@ -27,6 +29,10 @@
 
 <div id="view-solid">
 	<?php echo solid();?>
+</div>
+
+<div id="view-bootstrap">
+	<?php echo bootstrap();?>
 </div>
 
 <script src="script.js"></script>

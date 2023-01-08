@@ -31,7 +31,7 @@ nav .active {
   display: none;
 }
 
-#view-brand, #view-regular, #view-solid {
+#view-brand, #view-regular, #view-solid, #view-bootstrap {
   position: absolute;
   transition: all ease 0.5s;
   transform: none;
@@ -43,30 +43,30 @@ nav .active {
   height: 92vh;
   overflow: scroll;
 }
-#view-brand.hidden, #view-regular.hidden, #view-solid.hidden {
+#view-brand.hidden, #view-regular.hidden, #view-solid.hidden, #view-bootstrap.hidden {
   width: 0;
   height: 0;
   transform: scale(0);
 }
-#view-brand::-webkit-scrollbar, #view-regular::-webkit-scrollbar, #view-solid::-webkit-scrollbar {
+#view-brand::-webkit-scrollbar, #view-regular::-webkit-scrollbar, #view-solid::-webkit-scrollbar, #view-bootstrap::-webkit-scrollbar {
   height: 0;
   width: 10px;
   border-radius: 10px;
   background: #000;
 }
-#view-brand::-webkit-scrollbar-thumb, #view-regular::-webkit-scrollbar-thumb, #view-solid::-webkit-scrollbar-thumb {
+#view-brand::-webkit-scrollbar-thumb, #view-regular::-webkit-scrollbar-thumb, #view-solid::-webkit-scrollbar-thumb, #view-bootstrap::-webkit-scrollbar-thumb {
   width: 10px;
   border-radius: 10px;
   background: #fff;
 }
-#view-brand .icon-content, #view-regular .icon-content, #view-solid .icon-content {
+#view-brand .icon-content, #view-regular .icon-content, #view-solid .icon-content, #view-bootstrap .icon-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
 }
-#view-brand .icon-content .icon, #view-regular .icon-content .icon, #view-solid .icon-content .icon {
+#view-brand .icon-content .icon, #view-regular .icon-content .icon, #view-solid .icon-content .icon, #view-bootstrap .icon-content .icon {
   border-radius: 10px;
   background: silver;
   padding: 0.5rem;
@@ -74,11 +74,11 @@ nav .active {
   height: 50px;
   display: block;
 }
-#view-brand .icon-content .icon img, #view-regular .icon-content .icon img, #view-solid .icon-content .icon img {
+#view-brand .icon-content .icon img, #view-regular .icon-content .icon img, #view-solid .icon-content .icon img, #view-bootstrap .icon-content .icon img {
   width: 50px;
   height: 50px;
 }
-#view-brand .icon-content p, #view-regular .icon-content p, #view-solid .icon-content p {
+#view-brand .icon-content p, #view-regular .icon-content p, #view-solid .icon-content p, #view-bootstrap .icon-content p {
   text-align: center;
 }
 
